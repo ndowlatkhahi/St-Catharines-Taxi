@@ -83,6 +83,9 @@ class HomeViewController: UIViewController {
         self.toTextField.delegate = self
         self.fromTextField.delegate = self
         
+        self.toTextField.keyboardAppearance = .Dark
+        self.fromTextField.keyboardAppearance = .Dark
+        
         self.hideKeyboardWhenTappedAround()
         
         self.selectedNumPassengers = psgButton1
