@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="slideMenuView" customModule="taxi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contacts_filled" translatesAutoresizingMaskIntoConstraints="NO" id="ytG-Ww-qf9">
+                    <rect key="frame" x="15" y="27" width="55" height="55"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="3KE-Nw-nmR"/>
+                        <constraint firstAttribute="width" constant="55" id="Ah7-YJ-auG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCq-O5-Wkm">
+                    <rect key="frame" x="85" y="35" width="255" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="F4d-AA-c2s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Catharines, ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-Ky-cy2">
+                    <rect key="frame" x="85" y="56" width="255" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CTc-an-b6l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.7221153846153846" green="0.7221153846153846" blue="0.7221153846153846" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvr-wT-YF1">
+                    <rect key="frame" x="0.0" y="155" width="350" height="50"/>
+                    <color key="backgroundColor" white="0.23999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5D0-qz-3Tm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Recents">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseMenuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="vwa-tc-Dnf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abq-uR-zPP">
+                    <rect key="frame" x="0.0" y="206" width="350" height="50"/>
+                    <color key="backgroundColor" white="0.23999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fc9-5J-UvX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Bookings">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseMenuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="77h-EH-Ouq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKn-Xp-agz">
+                    <rect key="frame" x="0.0" y="257" width="350" height="50"/>
+                    <color key="backgroundColor" white="0.23999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZcS-KY-7U0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Settings">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseMenuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9ZD-ex-4Bn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2e-rM-94y">
+                    <rect key="frame" x="0.0" y="104" width="350" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QXK-qD-z86"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Get a Taxi">
+                        <color key="titleColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseMenuClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="NWj-eg-exS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.198216203551282" green="0.198216203551282" blue="0.198216203551282" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p2e-rM-94y" secondAttribute="trailing" id="0C8-q4-V9Z"/>
+                <constraint firstItem="p2e-rM-94y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7mP-Z7-adO"/>
+                <constraint firstItem="p2e-rM-94y" firstAttribute="top" secondItem="ytG-Ww-qf9" secondAttribute="bottom" constant="22" id="D53-FP-t8d"/>
+                <constraint firstItem="Dvr-wT-YF1" firstAttribute="top" secondItem="p2e-rM-94y" secondAttribute="bottom" constant="1" id="EG0-FE-KBD"/>
+                <constraint firstAttribute="trailing" secondItem="Abq-uR-zPP" secondAttribute="trailing" id="GCn-ke-vVX"/>
+                <constraint firstItem="axk-Ky-cy2" firstAttribute="top" secondItem="RCq-O5-Wkm" secondAttribute="bottom" id="I1M-tP-AE2"/>
+                <constraint firstItem="axk-Ky-cy2" firstAttribute="leading" secondItem="ytG-Ww-qf9" secondAttribute="trailing" constant="15" id="JqP-0u-JGA"/>
+                <constraint firstItem="Abq-uR-zPP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KAK-t8-nTf"/>
+                <constraint firstAttribute="trailing" secondItem="axk-Ky-cy2" secondAttribute="trailing" constant="10" id="Oej-Ka-Fcf"/>
+                <constraint firstItem="Abq-uR-zPP" firstAttribute="top" secondItem="Dvr-wT-YF1" secondAttribute="bottom" constant="1" id="QQp-v2-siY"/>
+                <constraint firstAttribute="trailing" secondItem="RCq-O5-Wkm" secondAttribute="trailing" constant="10" id="SXK-S7-MFI"/>
+                <constraint firstItem="Dvr-wT-YF1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bgz-yd-l5c"/>
+                <constraint firstItem="cKn-Xp-agz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c43-sT-1GH"/>
+                <constraint firstItem="cKn-Xp-agz" firstAttribute="top" secondItem="Abq-uR-zPP" secondAttribute="bottom" constant="1" id="ecZ-ni-x5h"/>
+                <constraint firstAttribute="trailing" secondItem="Dvr-wT-YF1" secondAttribute="trailing" id="eqi-mc-ZzZ"/>
+                <constraint firstItem="RCq-O5-Wkm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="ikI-8d-AhM"/>
+                <constraint firstItem="ytG-Ww-qf9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jTN-33-v3T"/>
+                <constraint firstItem="ytG-Ww-qf9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="ocM-Nm-tDb"/>
+                <constraint firstItem="RCq-O5-Wkm" firstAttribute="leading" secondItem="ytG-Ww-qf9" secondAttribute="trailing" constant="15" id="vdY-3t-vrF"/>
+                <constraint firstAttribute="trailing" secondItem="cKn-Xp-agz" secondAttribute="trailing" id="vww-0O-KBL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bookingsButton" destination="Abq-uR-zPP" id="nL7-dk-plB"/>
+                <outlet property="getTaxiButton" destination="p2e-rM-94y" id="0ts-PR-OU6"/>
+                <outlet property="profileImageView" destination="ytG-Ww-qf9" id="a1g-H3-EYv"/>
+                <outlet property="recentsButton" destination="Dvr-wT-YF1" id="kHX-Fn-gN1"/>
+                <outlet property="settingsButton" destination="cKn-Xp-agz" id="sGX-I3-sbE"/>
+            </connections>
+            <point key="canvasLocation" x="-127" y="258"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="contacts_filled" width="100" height="100"/>
+    </resources>
+</document>
